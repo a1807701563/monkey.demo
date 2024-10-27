@@ -1,0 +1,10 @@
+^C:\USERS\XIAHUSUPER\DESKTOP\GIT\BUILD\CMAKEFILES\9C6D2B893BDACCBC2604A5235871461C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/XiaHusuper/Desktop/git -BC:/Users/XiaHusuper/Desktop/git/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/XiaHusuper/Desktop/git/build/monkey.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
